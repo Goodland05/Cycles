@@ -2,13 +2,19 @@ package;
 
 import flixel.FlxState;
 import flixel.FlxG;
+import flixel.FlxSprite;
+import flixel.util.FlxColor;
 
-class PlayState extends FlxState
+
+class PlayState extends FlxState;
 {
 	override public function create()
 	{
 
 		super.create();
+		var sprite = new FlxSprite().makeGraphic(16, 16, FlxColor.BLUE);
+		add(sprite);
+		
 	}
 
 	override public function update(elapsed:Float)
